@@ -74,12 +74,183 @@ body{
     animation: bubbles 5s linear infinite;
 }
 
+.intro{
+    margin: 0% auto;
+    font-family: 'Reggae One', cursive;
+    color: black;
+    border-left: rgba(69, 70, 72, 0.701) 10px solid;
+    width: 50%;
+}
+
+.intro h1,h2{
+    margin-left: 20px;
+}
+
+.arrows{
+    font-size: 35px;
+    color: rgba(0, 253, 253, 0.45);
+}
+
+.arrows .arrow:nth-child(1){
+    animation: first-arrow 2s infinite linear;
+}
+
+.arrows .arrow:nth-child(2){
+    animation: second-arrow 2s infinite linear;
+}
+.arrows .arrow:nth-child(3){
+    animation: third-arrow 2s infinite linear;
+    color: rgb(53, 192, 53);
+}
+
+
+
+/* animation */
+
+@keyframes first-arrow{
+    50%{
+    color: rgb(91, 138, 224);   
+    }
+    90%{
+        color: rgb(94, 207, 94);
+    }
+}
+
+@keyframes second-arrow{
+    50%{
+    color: rgb(209, 50, 98);
+    }
+    90%{
+        color: rgb(177, 202, 48);
+    }
+}
+
+@keyframes third-arrow{
+    50%{
+    color: rgb(53, 192, 53);
+
+    }
+    90%{
+        color: rgb(202, 48, 81);
+    }
+}
+
 @keyframes bubbles{
     0%{
         transform: translate(0, 0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
     }
     100%{
         transform: translate(0, 500px);
         opacity: 0;
     }
+}
+
+.bubble img:nth-child(1){
+    animation-delay: 2s;
+    width: 20px;
+}
+.bubble img:nth-child(2){
+    width: 30px;
+    animation-delay: 3s;
+}
+.bubble img:nth-child(3){
+    width: 25px;
+    animation-delay: 1s;
+}
+.bubble img:nth-child(4){
+    animation-delay: 5s;
+    width: 120px;
+}
+.bubble img:nth-child(5){
+    animation-delay: 4s;
+    width: 40px;
+}
+.bubble img:nth-child(6){
+    width: 80px;
+    animation-delay: 2s;
+}
+.bubble img:nth-child(7){
+    animation-delay: 1s;
+    width: 100px;
+}
+.bubble img:nth-child(8){
+    animation-delay: 3s;
+    width: 60px;
+}
+.bubble img:nth-child(9){
+    width: 50px;
+    animation-delay: 7s;
+}
+.bubble img:nth-child(10){
+    animation-delay: 6s;
+    width: 10px;
+}
+.bubble img:nth-child(11){
+    animation-delay: 1s;
+    width: 25px;
+}
+.bubble img:nth-child(12){
+    animation-delay: 2s;
+    width: 45px;
+}
+.bubble img:nth-child(13){
+    width: 87px;
+    animation-delay: 8s;
+}
+.bubble img:nth-child(14){
+    animation-delay: 1s;
+}
+
+/* from here more 14 */
+
+.bubble img:nth-child(15){
+    animation-delay: 2s;
+    width: 20px;
+}
+.bubble img:nth-child(16){
+    width: 30px;
+    animation-delay: 3s;
+}
+.bubble img:nth-child(17){
+    width: 25px;
+    animation-delay: 1s;
+}
+.bubble img:nth-child(18){
+    animation-delay: 5s;
+    width: 120px;
+}
+.bubble img:nth-child(19){
+    animation-delay: 4s;
+    width: 40px;
+}
+.bubble img:nth-child(20){
+    width: 80px;
+    animation-delay: 2s;
+}
+.bubble img:nth-child(21){
+    animation-delay: 1s;
+    width: 100px;
+}
+.bubble img:nth-child(22){
+    animation-delay: 3s;
+    width: 60px;
+}
+.bubble img:nth-child(23){
+    width: 50px;
+    animation-delay: 7s;
+}
+.bubble img:nth-child(24){
+    animation-delay: 6s;
+    width: 10px;
+}
+.bubble img:nth-child(25){
+    animation-delay: 1s;
+    width: 25px;
 }
